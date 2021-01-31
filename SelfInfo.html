@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background-color: black;}
+            h1 {color: yellow; font-size: 100px;}
+            h6 {color: white; font-size: 30px;}
+            p {color: white; font-size: 30px;}
+            table, th, td {border: 1px solid blue;border-collapse: collapse;}
+            th, td {padding: 15px; text-align: left; color: white;}
+            ul {color: white; font-size: 20px;}
+            #note {background-color: black; color:red;}
+            #myCaption {background-color: lightblue; color: black; padding: 30px; text-align: left; font-size: 40px;}
+        </style>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">
+            Self-Information
+        </h1>
+
+        <button type="button" onclick="changePicture(0)">Change Picture</button>
+        <button type="button" onclick="changePicture(1)">Change Back</button>
+        <script>
+            function changePicture(num) {
+                var pic;
+                if (num == 0) {
+                    pic = "Images/My_Picture.jpg"
+                }
+                else {
+                    pic = "Images/IMG_0557.jpg"
+                }
+                document.getElementById("myPicture").src = pic;
+            }
+        </script>
+
+        <p>
+            <a href="#Hobbies">Jump to My Hobbies</a>
+        </p>
+
+        <img id="myPicture" src="Images/IMG_0557.jpg" 
+            alt="Potrait" width="200px" height="300px">
+        
+        <div style="background-color: darkblue; color:white; padding:20px;">
+            <p>
+                Name: Dang M Huynh.
+                <br>
+                Date of Birth: 12/18/2001.
+                <br>
+                Address: 20 Heard St, Auburn, MA 01501.
+                <br>
+                Studying Computer Science at <span id="note">New Jersey Institute of Technology</span>.
+                <br>
+                Email: 
+                <a href="mailto:huynhminhdangit@gmail.com">huynhminhdangit@gmail.com.</a>
+                <br>
+                My Github: 
+                <a href="https://github.com/dang18122001/Java_Practiced_Code" target="_blank">
+                https://github.com/dang18122001/Java_Practiced_Code.
+                </a>
+            </p>
+        </div>
+
+        <button onclick="document.getElementById('note').style.display = 'none'">Hide elements</button>
+        <button onclick="document.getElementById('note').style.display = 'inline'">Bring back elements</button>
+        <br>
+
+        <table>
+            <caption id="myCaption">SCHEDULE</caption>
+
+            <button onclick="displayResult()">Change text</button>
+            <script>
+                function displayResult() {
+                document.getElementById("myCaption").innerHTML = "My Schedule";
+            }
+            </script>
+
+            <tr>
+                <th></th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuseday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td>9AM-10:30AM</td>
+                <td>JavaScript</td>
+                <td>Java</td>
+                <td>YWCC 207</td>
+                <td>JavaScript</td>
+                <td></td>
+                <td></td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>12:30PM-2:00PM</td>
+                <td></td>
+                <td></td>
+                <td>MATH 333</td>
+                <td>CS 114</td>
+                <td>MATH 333</td>
+                <td>CS 114</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2:30PM-4PM</td>
+                <td>JavaScript</td>
+                <td>Java</td>
+                <td>HIST 213</td>
+                <td>JavaScript</td>
+                <td>HIST 213</td>
+                <td></td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>6PM-9PM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>PHYS 203</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h6 id="Hobbies">My Hobbies:</h6>
+        <ul style="list-style-type: disc;">
+            <li>Playing Soccer</li>
+            <li>Doing exercises</li>
+            <li>Reading novels</li>
+            <li>Playing LOL</li>
+        </ul>
+
+        <iframe src="file:///C:/Users/DangHuynh/Desktop/JavaScriptPractice/HTML/SelfInfo.html" 
+            style="border:2px solid red; height: 500px; width: 1000px;" title="Iframe Test"></iframe>
+    </body>
+</html>

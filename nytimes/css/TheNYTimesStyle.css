@@ -1,0 +1,176 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 600px 600px 1fr;
+  grid-template-rows: 270px 1fr 1fr 1fr;
+  grid-template-areas: 
+      "advert advert advert advert"
+      ". header header ."
+      ". content content ."
+      ". footer footer .";
+}
+
+.advert {
+  background: lightgray;
+  grid-area: advert;
+}
+
+.headPage {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 40% 60%;
+}
+
+.menu-container {
+  float: left;
+  padding: 8px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.menu-container:hover {
+  background: #d0d0d0;
+}
+
+#search-button {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border: hidden;
+  background: none;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+#search-button:hover {
+  background: #d0d0d0;
+}
+
+#menu-button {
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  margin: 2px 0;
+}
+
+.header-2 {
+  text-align: center;
+}
+
+.horizontalNavBar {
+  display: inline;
+  margin-left: 8px;
+  font-size: smaller;
+  padding: 3px;
+}
+
+.horizontalNavBar:hover {
+  background: #d0d0d0;
+}
+
+.navbar-1 {
+  margin-top: 10px;
+  padding-right: 100px;
+}
+
+.header-3 {
+  justify-self: end;
+}
+
+.subcribe-button {
+  background-color: #adc3d2;
+  color: white;
+  font-weight: bold;
+  width: 175px;
+  height: 35px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.subcribe-button:hover {
+  background: #376c94;
+}
+
+.login-button {
+  background-color: #adc3d2;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.login-button:hover {
+  background: #376c94;
+}
+
+.header-4 {
+  align-self: center;
+  margin-top: -25px;
+}
+
+h1 {
+  font-size: 55px;
+  margin-top: -5px;
+  margin-left: 35px;
+}
+
+.header-6 {
+  text-align: right;
+  align-self: center;
+  margin-top: -25px;
+}
+
+.page-content {
+  grid-area: content;
+}
+
+#after-header-line {
+  margin-top: -20px;
+  border: 0.1px solid #e8e8e8;
+}
+
+#topics {
+  text-align: center;
+  margin-left: -40px;
+  margin-top: -2px;
+}
+
+.black-line {
+  border: 0.1px solid black;
+  margin-top: -5px;
+}
+
+#three-small-article {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.small-image {
+  height: 45px; 
+  width: 45px;
+  float: left;
+}
+
+.small-heading {
+  font-size: 15px;
+  margin-bottom: -18px;
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
+.small-article {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+}
+
+.right-border {
+  border-right: 1px solid #e8e8e8;
+}
+
+.item6 {
+  background: green;
+  grid-area: footer;
+}

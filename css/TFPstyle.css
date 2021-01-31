@@ -1,0 +1,45 @@
+body {
+    background-image: url("../Images/flowerBackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 30% ;    
+    border: 3px solid;
+    border-color: green;
+    width: 40%;
+}
+
+h2 {
+    margin-left: 30%;
+    color: blue;
+}
+
+/* .content {
+    margin-left: 15px;
+} */
+
+input[type="text"],input[type="email"],input[type="number"],input[type="password"] {
+    width: 340px;
+    height: 30px;
+    border: none;
+}
+
+.button-box {
+    margin-left: 80%;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    height: 30px;
+    background-color: grey;
+    color: white;
+}
+
+b {
+    color: red;
+}

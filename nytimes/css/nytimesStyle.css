@@ -1,0 +1,136 @@
+body { 
+    /* Leave white space on both sides: 
+        https://stackoverflow.com/questions/25500825/how-to-leave-white-space-on-both-sides-of-page */
+    width: 1250px; 
+    margin: auto; 
+    /* Leave white space on top side:
+        https://stackoverflow.com/questions/47732485/there-is-blank-space-present-at-the-top-of-website-page */
+    margin-top: 120px;
+}
+
+/* Style for menu icon */
+.menuIcon {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+.columnLeftHeading {
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+
+.columnMiddleHeading {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.columnRightHeading {
+    float: left;
+    width: 25%;
+    text-align: right;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for horizontal navigation bar. */
+.horizontalNavBar {
+    display: inline;
+    padding: 8px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.account {
+    background-color: #6699cc;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    text-align: center;
+    border: 1px solid black;
+    border-top-color:	#D3D3D3;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+.column {
+    float: left;
+    margin: 5px;
+    width: 32%;
+    text-align: left;
+    display: inline;
+    border: 1px solid #D3D3D3;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-left: hidden;
+    font-size: 14px;
+}
+
+.heading3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+img {
+    float: left;
+    margin-right: 5px;
+}
+
+.columnLeft {
+    float: left;
+    width: 66%;
+    text-align: left;
+    border: 1px solid #D3D3D3;
+    border-left: hidden;
+    border-top: hidden;
+    padding-bottom: 10px;
+}
+
+.columnLeft:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnRight {
+    float: left;
+    width: 33%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2 {
+    border: 1px solid black;
+    border-top: double;
+    border-left: hidden;
+    border-bottom: hidden;
+    border-right: hidden;
+}
+
+.leftSide {
+    float: left;
+    width: 33.33%;
+    text-align: left;
+}
+
+.rightSide {
+    float: left;
+    width: 66.66%;
+}

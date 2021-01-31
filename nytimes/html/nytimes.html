@@ -1,0 +1,186 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New York Times</title>
+    <link rel="stylesheet" href="../css/nytimesStyle.css">
+    <!-- Load icon library https://www.w3schools.com/howto/howto_css_search_button.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/nytimesScript.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!-- Create three columns style: https://www.w3schools.com/howto/howto_css_three_columns.asp -->
+        <div class="row">
+            <div class="columnLeftHeading">
+                <!-- Create menu icon: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+                <button><i class="fa fa-search"></i></button>
+                <br>
+                <br>
+                <br>
+                <span id="date"></span>
+                <script>dateDisplay();</script>
+                </br>
+                <span>Today's Paper</span>
+            </div>
+
+            <div class="columnMiddleHeading">
+                <ul>
+                    <li class="horizontalNavBar">U.S.</li>
+                    <li class="horizontalNavBar">INTERNATIONAL</li>
+                    <li class="horizontalNavBar">CANADA</li>
+                    <li class="horizontalNavBar">ESPAÑOL</li>
+                    <li class="horizontalNavBar">中文</li>
+                </ul>
+
+                <h1>The New York Times</h1>
+            </div>
+
+            <div class="columnRightHeading">
+                <button class="account">SUBCRIBE FOR $1/WEEK</button>
+                <button class="account">LOG IN</button>
+                <br>
+                <br>
+                <br>
+                <span id="weather">Weather</span>
+                <br>
+                <span id="stock">Stock</span>
+            </div>
+        </div>
+        
+        <div class="navbar">
+            <ul>
+                <li class="horizontalNavBar">World</li>
+                <li class="horizontalNavBar">U.S.</li>
+                <li class="horizontalNavBar">Politics</li>
+                <li class="horizontalNavBar">N.Y.</li>
+                <li class="horizontalNavBar">Business</li>
+                <li class="horizontalNavBar">Opinion</li>
+                <li class="horizontalNavBar">Tech</li>
+                <li class="horizontalNavBar">Science</li>
+                <li class="horizontalNavBar">Health</li>
+                <li class="horizontalNavBar">Sports</li>
+                <li class="horizontalNavBar">Art</li>
+                <li class="horizontalNavBar">Books</li>
+                <li class="horizontalNavBar">Style</li>
+                <li class="horizontalNavBar">Food</li>
+                <li class="horizontalNavBar">Travel</li>
+                <li class="horizontalNavBar">Magazine</li>
+                <li class="horizontalNavBar">T Magazine</li>
+                <li class="horizontalNavBar">Real Estate</li>
+                <li class="horizontalNavBar">Video</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="../images/00thisamericanlife-glass-square640-v2.jpg" alt="Picture" 
+                    style="height: 45px; width: 45px;"> 
+                <span class="heading3">Listen to ‘This American Life’ <br></span> 
+                The host, Ira Glass, picked his favorite episodes for the show’s 25th anniversary.
+            </div>
+
+            <div class="column">
+                <img src="../images/modernlove-logo-square320-v3.jpg" alt="Picture" 
+                    style="height: 45px; width: 45px;">
+                    <span class="heading3">The Modern Love Podcast <br></span>
+                    Sometimes marriage requires sound and fury.
+            </div>
+
+            <div class="column">
+                <img src="../images/sway-album-art-square320-v10.jpg" alt="Picture" 
+                    style="height: 45px; width: 45px;">
+                    <span class="heading3">Listen to ‘Sway’<br></span>
+                    Kara Swisher and Nick Kristof discuss Mastercard and PornHub.
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="columnLeft">
+                <div class="leftSide">
+                    <h2>As Virus Resurges in Africa, Doctors Fear the Worst Is Yet to Come</h2>
+                    <ul>
+                        <li>When the pandemic began, the coronavirus killed far fewer people 
+                            in Africa than in Europe and the Americas.</li>
+                        <li>Now, a tide of new cases on the continent is raising alarms.</li>
+                    </ul>
+                </div>
+                
+                <div class="rightSide">
+                    <img src="../images/00virus-africa-somaliland-3-superJumbo.jpg" 
+                        alt="Picture" style="height: 320px; width: 500px;"/>
+                </div>
+            </div>
+
+            <div class="columnRight">
+                <h3>Opinion</h3>
+                <img src="../images/newnormal4-600w.mp4" alt="Picture" style="height: 250px; width: 350px; float: none;"/>
+                <h3 style="text-align: center;">Let's Start Over</h3>
+                <p style="text-align: center;">Vaccines are coming. Donald Trump is going. 
+                    Sometime in 2021, life will look a lot more normal. But it won’t be the same.</p>
+            </div>
+
+            <div class="columnLeft">
+                <div class="column">
+                    <table>
+                        <tr>
+                            <th>United States</th>
+                            <td>On Dec.25</td>
+                            <td>14-day change</td>
+                        </tr>
+                        <tr>
+                            <td>New cases</td>
+                            <td style="color: red;">91,922*</td>
+                            <td style="color: red;">-11%</td>
+                        </tr>
+                        <tr>
+                            <td>New deaths</td>
+                            <td>1.129*</td>
+                            <td>-1%</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="column">
+                    Where cases per capita are <span style="font-weight: bold;">highest</span>
+                    <table>
+                        <tr>
+                            <td style="text-decoration: underline;">Calif.</td>
+                            <td style="text-decoration: underline;">Tenn.</td>
+                            <td style="text-decoration: underline;">Ariz.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">Ala.</td>
+                            <td style="text-decoration: underline;">Okla.</td>
+                            <td style="text-decoration: underline;">Ark.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">Ind.</td>
+                            <td style="text-decoration: underline;">W.Va.</td>
+                            <td style="text-decoration: underline;">Del.</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="column" style="border-right: hidden;">
+                    <table>
+                        <tr>
+                            <th>U.S. hot spots></th>
+                            <th>Worldwide</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="columnRight">
+                <div class="column" style="width: 49%;">
+                </div>
+            </div> 
+
+        </div>
+    </div>
+</body>
+</html>

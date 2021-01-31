@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #f0f0f0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #BE3144;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-size: 22px;
+    color: #f0f0f0;
+}
+
+#navbar a:hover {
+    background-color: #303841;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#welcome-section p {
+    font-size: 30px;
+    color: #BE3144;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#projects {
+    background-color: #45567D;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h2 {
+    font-size: 42;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 419.6px 60px;
+    text-decoration: underline;
+}
+
+#projectContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-tileContainer {
+    text-decoration: none;
+    background-color: #303841;
+    width: 400px;
+    height: 400px;
+    margin: 0px 20px 40px;
+}
+
+.project-tile img{
+    width: 100%;
+    height: calc(100% - 68px);
+    object-fit: cover;
+}
+
+.project-tile p {
+    font-size: 20px;
+    padding: 20px 5px;
+    color: #f0f0f0;
+}
+
+.project-tile{
+    text-decoration: none;
+}
+
+.project-tile .code {
+    color: #303841;
+}
+
+.project-tile:hover .code {
+    color: #ff7f50;
+}
+
+#contact {
+    background-color: #303841;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contactDetails {
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.contactDetails:hover {
+    transform: translateY(8px);
+}
+
+@media (max-width: 330px) {
+    #navbar ul {
+        flex-direction: column;
+        max-height: 100px;
+    }
+
+    #navbar a {
+        height: calc(100% / 3);
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-tileContainer {
+        width: 100vw;
+    }
+
+    #contact {
+        width: 100%;
+    }
+}

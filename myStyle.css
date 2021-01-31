@@ -1,0 +1,82 @@
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    text-align: center;
+    font-weight:bold;
+    color: rgb(250,235,215);
+    background-image: url('Images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+ 
+h1{color: red; font-size: 50px;}
+ 
+h3{font-size: 36px; color: yellow;}
+
+h2{font-size: 40px; color: yellow;}
+
+h4{font-size: 30px; color: yellow;}
+
+h5{font-size: 25px; color: yellow;}
+
+p{font-size: 30px;}
+
+ul{
+    font-size: 30px;
+    display: inline-block;
+    list-style-type: disc;
+}
+ol{
+    font-size: 30px;
+    display: inline-block;
+}
+ 
+table, th, td{
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+	width: 50%;
+	border: 3px solid white;
+	padding: 10px;
+    border-collapse: collapse;
+}
+
+th{color: yellowgreen;}
+td{color: white;}
+
+.smallIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.bigIcon {
+    width: 40%;
+    height: 40%;
+}
+
+.linkText{
+    color: white;
+}
+
+#gold{
+    color: gold;
+}
+
+#silver{
+    color: silver;
+}
+
+#copper{
+    color: #b87333;
+}
+
+#rankingNumber{
+  list-style-type: upper-roman;
+}

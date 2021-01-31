@@ -1,0 +1,53 @@
+.container {
+    display: block;   
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 30% ;    
+    border: 3px solid;
+    border-color: green;
+    width: 40%;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    color: blue;
+    text-align: center;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+b {
+    color: red;
+}

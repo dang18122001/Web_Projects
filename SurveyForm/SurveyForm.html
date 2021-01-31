@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="SurveyFormStyle.css">
+<header>
+    <h1 id="title" class="text-center">English Center Survey Form</h1>
+    <p id="description" class="text-center">Please fill in the form to lest us know about you</p>
+</header>
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-layout" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-layout" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+        <label id="number-label" for="number">Year of Birth</label>
+        <input type="number" name="yearOfBirth" id="number" min="1871" max="2011" class="form-layout" placeholder="Enter your year of birth" required>
+    </div>
+    <div class="form-group">
+        <p>Which option best describes your curent English level?</p>
+        <select id="dropdown" name="level" class="form-layout" required>
+            <option disabled selected value>Select current English level</option>
+            <option value="modest">Modest</option>
+            <option value="competent">Competent</option>
+            <option value="good">Good</option>
+            <option value="veryGood">Very Good</option>
+            <option value="expert">Expert</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <p>Is there any specific certificate that you are aiming to achieve?</p>
+        <label>
+            <input name="certificate" value="ielts" type="checkbox" class="input-checkbox">
+            IELST
+        </label>
+        <label>
+            <input name="certificate" value="toefl" type="checkbox" class="input-checkbox">
+            TOEFL
+        </label>
+        <label>
+            <input name="certificate" value="toeic" type="checkbox" class="input-checkbox">
+            TOEIC
+        </label>
+        <label>
+            <input name="certificate" value="sat" type="checkbox" class="input-checkbox">
+            SAT
+        </label>
+        <label>
+            <input name="certificate" value="improve" type="checkbox" class="input-checkbox">
+            I just need to improve my English.
+        </label>
+    </div>
+    <div class="form-group">
+        <p>Would you like to reiceve more advertisement about study programs from us?</p>
+        <label>
+            <input name="user-decision" value="yes" type="radio" class="input-radio" checked>
+            Yes
+        </label>
+        <label>
+            <input name="user-decision" value="no" type="radio" class="input-radio">
+            No
+        </label>
+    </div>
+    <div class="form-group">
+        <p>Any messages for us?</p>
+        <textarea id="messages" name="message" placeholder="Enter your message here..." class="input-textarea"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+</form>
